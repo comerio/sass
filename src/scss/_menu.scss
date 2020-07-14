@@ -82,7 +82,7 @@
         }
 
         &__item {
-            transform: translateX(100vw);
+            transform: translateX(-100vw);
             @include transition-ease;
 
             &.open {
@@ -93,5 +93,23 @@
                 color: $secundary-color;
             }
         }
+        &__link {
+            display: inline-block;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+            font-weight: 300;
+            @include transition-ease;
+
+            &:hover{
+                color: $secundary-color;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .menu-nav__item:nth-child(#{$i}) {
+        transition-delay: ($i * 0.1s) + 0.1s;
     }
 }
