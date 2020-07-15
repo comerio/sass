@@ -11,7 +11,7 @@
                 rgba($fade-color, 0.1),
                 rgba($fade-color, 0.9)
             ),
-            url('../img/amanda-capa2.jpg') top;
+            url('../img/model-1.jpg') top;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -37,11 +37,12 @@
         border-bottom: 5px solid $secundary-color;
         overflow: hidden;
         cursor: pointer;
+        
 
         img {
             width: 100%;
         }
-
+         
         &::after {
             content: '';
             position: absolute;
@@ -55,12 +56,12 @@
         }
 
         &:hover {
+            transform: scale(1.1);
+
             &::after {
                 top: 0;
                 opacity: 0.2;
-            }
-            .projects_btn {
-                opacity: 1;
+                
             }
         }
     }

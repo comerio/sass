@@ -32,6 +32,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery-zoom": "^1.7.21",
     "moment": "^2.22.2",
     "natives": "^1.1.6"
   }
