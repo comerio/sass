@@ -1,5 +1,5 @@
 $primary-color: #272727;
-$secundary-color: #ff625f;
+$secundary-color: #6303B0;
 
 * {
   box-sizing: border-box;
@@ -8,7 +8,7 @@ $secundary-color: #ff625f;
 }
 
 @mixin transition-ease {
-	transition: all 0.5s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 @function set-text-color($color) {
