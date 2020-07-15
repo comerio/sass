@@ -1,5 +1,5 @@
 $primary-color: #272727;
-$secundary-color: #6303B0;
+$secundary-color: #714674;
 
 * {
   box-sizing: border-box;
@@ -17,5 +17,23 @@ $secundary-color: #6303B0;
 	}
 	@else {
 		@return #fff;
+	}
+}
+
+@mixin media-md {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin media-lg {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin media-xl {
+	@media screen and (min-width: 1600px) {
+		@content;
 	}
 }
