@@ -7,9 +7,9 @@
         background:
             linear-gradient(
                 to right,
-                rgba($primary-color, 0.9),
-                rgba($primary-color, 0.1),
-                rgba($primary-color, 0.9)
+                rgba($fade-color, 0.9),
+                rgba($fade-color, 0.1),
+                rgba($fade-color, 0.9)
             ),
             url('../img/amanda-capa2.jpg') top;
         background-size: cover;
@@ -57,7 +57,7 @@
         &:hover {
             &::after {
                 top: 0;
-                opacity: 0.9;
+                opacity: 0.2;
             }
             .projects_btn {
                 opacity: 1;
